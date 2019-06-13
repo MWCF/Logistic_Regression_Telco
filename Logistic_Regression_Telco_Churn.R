@@ -1,33 +1,33 @@
 # dataset from kaggle - transformed - data source https://www.kaggle.com/vhcg77/telcom-churns-dataset
 # dataset is transformed and divided into Test and Train data. 
 Churn_data <- read.csv("C:/Users/wai_f/Documents/Raw_Data_Telco.csv") #import transformed data
-Churn_data$Churn <- as.factor(Churn_data$Churn) # convert result into factor
-str(Churn_data) #Check structure
-# rename the predictor variable so the glm model will work with caret
+Churn_data$Churn <- as.factor(Churn_data$Churn) 
+str(Churn_data) 
+
 library(caret)
 levels(Churn_data$Churn) <- make.names(levels(factor(Churn_data$Churn)))
 levels(Churn_data$Churn)
-#scale numeric data
+
 Churn_data$tenure <- scale(Churn_data$tenure)
 Churn_data$MonthlyCharges <-scale(Churn_data$MonthlyCharges)
 Churn_data$InternetService <-scale(Churn_data$InternetService)
-#split data into train and test data
+
 smp_size <- floor(0.75 * nrow(Churn_data))
 set.seed(110)
 train_ind <- sample(seq_len(nrow(Churn_data)), size = smp_size)
 train <-Churn_data[train_ind,]
 test <-Churn_data[-train_ind,]
-#create model
+
 train_control <- trainControl(method = "cv", number = 10, savePredictions = TRUE, classProbs = TRUE, sampling = "up", summaryFunction = twoClassSummary)
 fit <- train(Churn~., data=train, trControl=train_control, method="glm", family = binomial, metric="ROC")
-# run test data through model and predict
+
 pred = predict(fit, type = 'raw', newdata = test[, 1:25])
-# look at predictions
+
 pred
-# combine prediction with data
+
 pred_data<-data.frame(pred)
 result<-cbind(pred_data,test)
-# check results with confusion matrix
+
 library(e1071)
 confusionMatrix<- confusionMatrix(result$pred,result$Churn, positive = "X1")
 confusionMatrix
