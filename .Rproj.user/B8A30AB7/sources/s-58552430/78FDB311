@@ -1,0 +1,29 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1564602218674.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "78FDB311",
+    "lastKnownWriteTime" : 32370120545140837,
+    "last_content_update" : 1564602218674,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "551F56B8",
+        "caption" : "Churn_data2",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=Churn_data2&cache_key=551F56B8",
+        "displayedObservations" : "7043",
+        "environment" : "",
+        "object" : "Churn_data2",
+        "preview" : "0",
+        "totalObservations" : "7043",
+        "variables" : "23"
+    },
+    "relative_order" : 8,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}

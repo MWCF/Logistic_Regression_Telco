@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1565156068243.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "F42F9628",
+    "lastKnownWriteTime" : 1559674754,
+    "last_content_update" : 1559674754,
+    "path" : "~/Big Data Course/Git/Logistic_Regression_Telco/Logistic_Regression_Telco_Churn.R",
+    "project_path" : "Logistic_Regression_Telco_Churn.R",
+    "properties" : {
+        "cursorPosition" : "12,61",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 9,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

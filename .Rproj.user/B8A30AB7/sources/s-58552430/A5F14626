@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1559673523255.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "A5F14626",
+    "lastKnownWriteTime" : 32088490948427834,
+    "last_content_update" : 1559673523255,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "id" : "7666a5cba6fd4c9eb10d91c69ba5279b",
+        "name" : "train_control",
+        "title" : "train_control"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "object_explorer"
+}

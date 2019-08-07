@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1565155050283.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1967529777",
+    "id" : "B3D19592",
+    "lastKnownWriteTime" : 1565158088,
+    "last_content_update" : 1565158088661,
+    "path" : "~/Big Data Course/Git/Clustering_Bakery_kmeans/Logistic_Regression_Telco/Update_remove_correlated_fields.R",
+    "project_path" : null,
+    "properties" : {
+        "cursorPosition" : "70,0",
+        "scrollLine" : "52"
+    },
+    "relative_order" : 8,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
